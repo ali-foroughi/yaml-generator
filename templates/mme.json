@@ -1,0 +1,81 @@
+{
+  "logger": {
+    "file": "/var/log/zcore/mme.log"
+  },
+  "mme": {
+    "freeDiameter": "/etc/freeDiameter/mme.conf",
+    "s1ap": [
+      {
+        "addr": "172.17.80.131"
+      }
+    ],
+    "gtpc": [
+      {
+        "addr": "172.17.63.131"
+      }
+    ],
+    "s10": [
+      {
+        "addr": "172.17.80.131"
+      }
+    ],
+    "gummei": {
+      "plmn_id": {
+        "mcc": 432,
+        "mnc": 45
+      },
+      "mme_gid": 2,
+      "mme_code": 142
+    },
+    "tai": {
+      "plmn_id": {
+        "mcc": 432,
+        "mnc": 45
+      },
+      "tac": 5
+    },
+    "security": {
+      "integrity_order": [
+        "EIA2",
+        "EIA1",
+        "EIA0"
+      ],
+      "ciphering_order": [
+        "EEA0",
+        "EEA1",
+        "EEA2"
+      ]
+    },
+    "network_name": {
+      "full": "zcore"
+    },
+    "mme_name": "srv14-mme-2",
+    "mgmt_request_path": "tcp://172.20.9.13:6001",
+    "mgmt_response_path": "tcp://172.20.9.13:6002"
+  },
+  "s10": {},
+  "sgwc": {
+    "gtpc": [
+      {
+        "addr": "172.20.2.172"
+      }
+    ]
+  },
+  "smf": {
+    "gtpc": [
+      {
+        "addr": [
+          "172.20.2.81"
+        ]
+      }
+    ]
+  },
+  "parameter": null,
+  "max": {
+    "ue": 16384
+  },
+  "pool": null,
+  "sockopt": null,
+  "sctp": null,
+  "time": null
+}

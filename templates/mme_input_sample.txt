@@ -1,0 +1,15 @@
+logger.file=/var/log/zcore/mme.log
+mme.freeDiameter=/etc/freeDiameter/mme.conf
+mme.s1ap[0].addr=S1AP_IP
+mme.gtpc[0].addr=GTPC_IP
+mme.s10[0].addr=S10_IP
+mme.gummei.mme_gid=2
+mme.gummei.mme_code=MME_CODE
+mme.tai.tac=TAC_VAL
+mme.network_name.full=zcore
+mme.mme_name=MME_NAME
+mme.mgmt_request_path=tcp://172.20.9.13:6001
+mme.mgmt_response_path=tcp://172.20.9.13:6002
+sgwc.gtpc[0].addr=172.20.2.172
+smf.gtpc[0].addr=172.20.2.81
+max.ue=16384
