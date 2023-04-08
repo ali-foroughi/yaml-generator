@@ -1,4 +1,4 @@
-# YAML Generator
+# YAML Generator for Open5GS
 
 This project creates YAML configuration files for the MME module based on a JSON template.
 
