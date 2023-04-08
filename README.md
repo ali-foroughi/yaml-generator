@@ -28,10 +28,10 @@ MME name	OM	S1MME	S11	DB	TAC
 
 For example:
 ```
-srv13-mme-2-tac2-secondary	172.17.93.21	172.17.80.99	172.17.63.99	172.17.88.99	2
+srv13-mme-2-tac2-secondary	192.168.101.21	192.168.102.99	192.168.63.99	192.168.88.99	2
 ```
 
 Multiple TACs for one MME should be seperated by dash. For example <code>11-12-14</code>
 ```
-srv14-mme-7-TAC11-12-14-Primary		172.17.93.46	172.17.80.136	172.17.63.136	172.17.88.136	11-12-14
+srv14-mme-7-TAC11-12-14-Primary		192.168.101.46	192.168.102.136	192.168.63.136	192.168.88.136	11-12-14
 ```
