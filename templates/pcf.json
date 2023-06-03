@@ -1,0 +1,41 @@
+{
+  "db_uri": "mongodb://MONGO_IP/open5gs",
+  "logger": {
+    "file": "/root/zcore/install/var/log/open5gs/pcf.log"
+  },
+  "tls": {
+    "enabled": "no",
+    "server": {
+      "cacert": "/root/zcore/install/etc/open5gs/tls/ca.crt",
+      "key": "/root/zcore/install/etc/open5gs/tls/pcf.key",
+      "cert": "/root/zcore/install/etc/open5gs/tls/pcf.crt"
+    },
+    "client": {
+      "cacert": "/root/zcore/install/etc/open5gs/tls/ca.crt",
+      "key": "/root/zcore/install/etc/open5gs/tls/pcf.crt",
+      "cert": "/root/zcore/install/etc/open5gs/tls/pcf.crt"
+    }
+  },
+  "pcf": {
+    "sbi": [
+      {
+        "addr": "PCF_SBI",
+        "port": 7777
+      }
+    ]
+  },
+  "scp": {
+    "sbi": [
+      {
+        "addr": "SCP_SBI",
+        "port": 7777
+      }
+    ]
+  },
+  "parameter": null,
+  "max": {
+    "ue": "MAX_UE",
+    "peer": "MAX_PEER"
+  },
+  "pool": null
+}

@@ -1,0 +1,44 @@
+{
+  "db_uri": "mongodb://MONGO_IP/open5gs",
+  "logger": {
+    "file": "/root/zcore/install/var/log/open5gs/udr.log"
+  },
+  "tls": {
+    "enabled": "no",
+    "server": {
+      "cacert": "/root/zcore/install/etc/open5gs/tls/ca.crt",
+      "key": "/root/zcore/install/etc/open5gs/tls/udr.key",
+      "cert": "/root/zcore/install/etc/open5gs/tls/udr.crt"
+    },
+    "client": {
+      "cacert": "/root/zcore/install/etc/open5gs/tls/ca.crt",
+      "key": "/root/zcore/install/etc/open5gs/tls/udr.key",
+      "cert": "/root/zcore/install/etc/open5gs/tls/udr.crt"
+    }
+  },
+  "udr": {
+    "sbi": [
+      {
+        "addr": "UDR_SBI",
+        "port": 7777
+      }
+    ]
+  },
+  "scp": {
+    "sbi": [
+      {
+        "addr": "SCP_SBI",
+        "port": 7777
+      }
+    ]
+  },
+  "parameter": null,
+  "max": {
+    "ue": "MAX_UE",
+    "peer": "MAX_PEER"
+  },
+  "pool": null,
+  "sockopt": null,
+  "sctp": null,
+  "time": null
+}

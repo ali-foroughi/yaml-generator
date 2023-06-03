@@ -1,0 +1,37 @@
+{
+  "logger": {
+    "file": "/root/zcore/install/var/log/open5gs/ausf.log"
+  },
+  "tls": {
+    "enabled": "no",
+    "server": {
+      "cacert": "/root/zcore/install/etc/open5gs/tls/ca.crt",
+      "key": "/root/zcore/install/etc/open5gs/tls/ausf.key",
+      "cert": "/root/zcore/install/etc/open5gs/tls/ausf.crt"
+    },
+    "client": {
+      "cacert": "/root/zcore/install/etc/open5gs/tls/ca.crt",
+      "key": "/root/zcore/install/etc/open5gs/tls/ausf.key",
+      "cert": "/root/zcore/install/etc/open5gs/tls/ausf.crt"
+    }
+  },
+  "ausf": {
+    "sbi": [
+      {
+        "addr": "AUSF_SBI",
+        "port": 7777
+      }
+    ]
+  },
+  "scp": {
+    "sbi": [
+      {
+        "addr": "SCP_SBI",
+        "port": 7777
+      }
+    ]
+  },
+  "parameter": null,
+  "max": null,
+  "time": null
+}

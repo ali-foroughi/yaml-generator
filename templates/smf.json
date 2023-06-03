@@ -1,0 +1,79 @@
+{
+  "logger": {
+    "file": "/root/zcore/install/var/log/open5gs/smf.log"
+  },
+  "tls": {
+    "enabled": "no",
+    "server": {
+      "cacert": "/root/zcore/install/etc/open5gs/tls/ca.crt",
+      "key": "/root/zcore/install/etc/open5gs/tls/smf.key",
+      "cert": "/root/zcore/install/etc/open5gs/tls/smf.crt"
+    },
+    "client": {
+      "cacert": "/root/zcore/install/etc/open5gs/tls/ca.crt",
+      "key": "/root/zcore/install/etc/open5gs/tls/smf.key",
+      "cert": "/root/zcore/install/etc/open5gs/tls/smf.crt"
+    }
+  },
+  "smf": {
+    "sbi": [
+      {
+        "addr": "SMF_SBI",
+        "port": 7777
+      }
+    ],
+    "pfcp": [
+      {
+        "addr": "SMF_PFCP"
+      }
+    ],
+    "gtpc": [
+      {
+        "addr": "SMF_GTPC"
+      }
+    ],
+    "gtpu": [
+      {
+        "addr": "SMF_GTPU"
+      }
+    ],
+    "metrics": [
+      {
+        "addr": "SMF_METRICS",
+        "port": 9090
+      }
+    ],
+    "subnet": [
+      {
+        "addr": "SMF_SUBNET"
+      }
+    ],
+    "dns": [
+      "8.8.8.8",
+      "8.8.4.4"
+    ],
+    "mtu": 1400,
+    "ctf": {
+      "enabled": "auto"
+    },
+    "freeDiameter": "/root/zcore/install/etc/freeDiameter/smf.conf"
+  },
+  "scp": {
+    "sbi": [
+      {
+        "addr": "SCP_SBI",
+        "port": 7777
+      }
+    ]
+  },
+  "upf": {
+    "pfcp": [
+      {
+        "addr": "UPF_PFCP"
+      }
+    ]
+  },
+  "parameter": null,
+  "max": null,
+  "time": null
+}

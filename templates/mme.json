@@ -57,6 +57,10 @@
   "sgwc": {
     "gtpc": [
       {
+        "addr": "172.17.56.140",
+        "apn": "zcoretest"
+      },
+      {
         "addr": "172.20.2.172"
       }
     ]
@@ -64,15 +68,18 @@
   "smf": {
     "gtpc": [
       {
-        "addr": [
-          "172.20.2.81"
-        ]
+        "addr": "172.20.2.81"
+      },
+      {
+        "addr": "172.17.56.141",
+        "apn": "zcoretest"
       }
     ]
   },
   "parameter": null,
   "max": {
-    "ue": 16384
+    "ue": 16384,
+    "gnb": 256
   },
   "pool": null,
   "sockopt": null,

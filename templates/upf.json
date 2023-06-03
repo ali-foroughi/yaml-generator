@@ -1,0 +1,31 @@
+{
+  "logger": {
+    "file": "/root/zcore/install/var/log/open5gs/upf.log"
+  },
+  "upf": {
+    "pfcp": [
+      {
+        "addr": "UPF_PFCP"
+      }
+    ],
+    "gtpu": [
+      {
+        "addr": "UPF_GTPU"
+      }
+    ],
+    "subnet": [
+      {
+        "addr": "UPF_SUBNET",
+        "dnn": "neon"
+      }
+    ]
+  },
+  "smf": {
+    "pfcp": {
+      "addr": "SMF_PFCP"
+    }
+  },
+  "parameter": null,
+  "max": null,
+  "time": null
+}

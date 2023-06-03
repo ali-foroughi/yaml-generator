@@ -1,0 +1,49 @@
+{
+  "logger": {
+    "file": "/root/zcore/install/var/log/open5gs/nssf.log"
+  },
+  "tls": {
+    "enabled": "no",
+    "server": {
+      "cacert": "/root/zcore/install/etc/open5gs/tls/ca.crt",
+      "key": "/root/zcore/install/etc/open5gs/tls/nssf.key",
+      "cert": "/root/zcore/install/etc/open5gs/tls/nssf.crt"
+    },
+    "client": {
+      "cacert": "/root/zcore/install/etc/open5gs/tls/ca.crt",
+      "key": "/root/zcore/install/etc/open5gs/tls/nssf.key",
+      "cert": "/root/zcore/install/etc/open5gs/tls/nssf.crt"
+    }
+  },
+  "nssf": {
+    "sbi": [
+      {
+        "addr": "NSSF_SBI",
+        "port": 7777
+      }
+    ],
+    "nsi": [
+      {
+        "addr": "NSSF_NSI",
+        "port": 7777,
+        "s_nssai": {
+          "sst": 1
+        }
+      }
+    ]
+  },
+  "scp": {
+    "sbi": [
+      {
+        "addr": "SCP_SBI",
+        "port": 7777
+      }
+    ]
+  },
+  "parameter": null,
+  "max": {
+    "ue": "MAX_UE",
+    "peer": "MAX_PEER"
+  },
+  "time": null
+}

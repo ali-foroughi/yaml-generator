@@ -1,0 +1,104 @@
+{
+  "logger": {
+    "file": "/root/zcore/install/var/log/open5gs/amf.log"
+  },
+  "tls": {
+    "enabled": "no",
+    "server": {
+      "cacert": "/root/zcore/install/etc/open5gs/tls/ca.crt",
+      "key": "/root/zcore/install/etc/open5gs/tls/amf.key",
+      "cert": "/root/zcore/install/etc/open5gs/tls/amf.crt"
+    },
+    "client": {
+      "cacert": "/root/zcore/install/etc/open5gs/tls/ca.crt",
+      "key": "/root/zcore/install/etc/open5gs/tls/amf.key",
+      "cert": "/root/zcore/install/etc/open5gs/tls/amf.crt"
+    }
+  },
+  "amf": {
+    "sbi": [
+      {
+        "addr": "AMF_SBI",
+        "port": 7777
+      }
+    ],
+    "ngap": [
+      {
+        "addr": "AMF_NGAP"
+      }
+    ],
+    "metrics": [
+      {
+        "addr": "AMF_METRICS",
+        "port": 9090
+      }
+    ],
+    "guami": [
+      {
+        "plmn_id": {
+          "mcc": "MCC_VAL",
+          "mnc": "MNC_VAL"
+        },
+        "amf_id": {
+          "region": 2,
+          "set": 1
+        }
+      }
+    ],
+    "tai": [
+      {
+        "plmn_id": {
+          "mcc": "MCC_VAL",
+          "mnc": "MNC_VAL"
+        },
+        "tac": 1
+      }
+    ],
+    "plmn_support": [
+      {
+        "plmn_id": {
+          "mcc": "MCC_VAL",
+          "mnc": "MNC_VAL"
+        },
+        "s_nssai": [
+          {
+            "sst": 1
+          }
+        ]
+      }
+    ],
+    "security": {
+      "integrity_order": [
+        "NIA2",
+        "NIA1",
+        "NIA0"
+      ],
+      "ciphering_order": [
+        "NEA0",
+        "NEA1",
+        "NEA2"
+      ]
+    },
+    "network_name": {
+      "full": "Neon-5G"
+    },
+    "amf_name": "open5gs-amf0"
+  },
+  "scp": {
+    "sbi": [
+      {
+        "addr": "SCP_SBI",
+        "port": 7777
+      }
+    ]
+  },
+  "parameter": null,
+  "max": null,
+  "usrsctp": null,
+  "time": {
+    "t3512": {
+      "value": 540
+    }
+  }
+}
+
